@@ -12,7 +12,7 @@ function Todo({ todo, toggleComplete, deleteTodo, startEditing, saveEdit, editId
       }}
     >
       {editId === todo.id ? (
-        // Edit mode
+        
         <>
           <input
             type="text"
@@ -23,7 +23,7 @@ function Todo({ todo, toggleComplete, deleteTodo, startEditing, saveEdit, editId
           <button onClick={() => setEditText('')}>Cancel</button>
         </>
       ) : (
-        // View mode
+      
         <>
           <span onClick={() => toggleComplete(todo.id)} style={{ cursor: 'pointer' }}>
             {todo.text}
